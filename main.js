@@ -153,7 +153,7 @@ let questions = [
     "class"
   ),
   new Question(
-    "When we write &lt;img src='img.png'&gt;, what does 'img.png' inside the double quote implies?",
+    "When we write &lt;img src='img.png'&gt;, what does 'img.png' inside the single quote implies?",
     ["element", "attribute", "value", "operator"],
     "value"
   ),
@@ -253,7 +253,7 @@ let questions = [
     "text-transform : capitalize;"
   ),
   new Question(
-    "How to select the elements with the class name 'example'?",
+    "How do you select the elements with the class name 'example'?",
     [
       "example",
       "#example",
