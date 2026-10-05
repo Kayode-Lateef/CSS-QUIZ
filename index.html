@@ -1,40 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Quiz</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://use.fontawesome.com/e53140d24a.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="quiz-box">
-            <div id="quiz">
-                <h1><i class="fa fa-html5" aria-hidden="true"></i> CSS QUIZ </h1>
-                <div class="quiz-header">
-                    <p id="progress"></p>
-                    <p id="count-down"></p>
-                </div>
-                <p id="question"> </p>
 
-                <div class="buttons">
-                    <button class="btn" id="btn0"><span class="opt"> A </span><span id="choice0"></span> </button>
-                    <button class="btn" id="btn1"><span class="opt"> B </span><span id="choice1"></span></button>
-                    <button class="btn" id="btn2"><span class="opt"> C </span><span id="choice2"></span> </button>
-                   <button class="btn" id="btn3"> <span class="opt"> D </span><span id="choice3"></span> </button>
-                </div>
-                <hr>
-                <footer>
-                    <p>Developed by KaytechiT</p>
-                    <img src="kaytech-logo-white.png" alt="">
-                </footer>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CSS Development Quiz</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main
+        class="quiz-container"
+        id="quiz"
+    >
+
+        <!-- =====================================
+             QUIZ HEADER
+        ====================================== -->
+
+        <header class="quiz-header">
+
+            <div class="quiz-title-area">
+
+                <p class="quiz-category">
+                    Web Development Assessment
+                </p>
+
+                <h1>
+                    CSS Development Quiz
+                </h1>
+
             </div>
-        </div>
-    </div>
+
+
+            <div class="quiz-info">
+
+                <p id="progress">
+                    Question 1 of 20
+                </p>
+
+
+                <p class="timer">
+
+                    Time:
+
+                    <span id="timer">
+                        20:00
+                    </span>
+
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             QUESTION AREA
+        ====================================== -->
+
+        <section class="question-section">
+
+            <h2 id="question">
+                Question will appear here
+            </h2>
+
+
+            <!-- =================================
+                 ANSWERS
+            ================================== -->
+
+            <div class="answer-grid">
+
+
+                <!-- ANSWER A -->
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn0"
+                    data-choice-index="0"
+                >
+
+                    <span class="answer-letter">
+                        A
+                    </span>
+
+                    <span
+                        class="answer-text"
+                        id="choice0"
+                    >
+                        Answer A
+                    </span>
+
+                </button>
+
+
+                <!-- ANSWER B -->
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn1"
+                    data-choice-index="1"
+                >
+
+                    <span class="answer-letter">
+                        B
+                    </span>
+
+                    <span
+                        class="answer-text"
+                        id="choice1"
+                    >
+                        Answer B
+                    </span>
+
+                </button>
+
+
+                <!-- ANSWER C -->
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn2"
+                    data-choice-index="2"
+                >
+
+                    <span class="answer-letter">
+                        C
+                    </span>
+
+                    <span
+                        class="answer-text"
+                        id="choice2"
+                    >
+                        Answer C
+                    </span>
+
+                </button>
+
+
+                <!-- ANSWER D -->
+
+                <button
+                    type="button"
+                    class="answer-btn"
+                    id="btn3"
+                    data-choice-index="3"
+                >
+
+                    <span class="answer-letter">
+                        D
+                    </span>
+
+                    <span
+                        class="answer-text"
+                        id="choice3"
+                    >
+                        Answer D
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================
+                 NAVIGATION
+            ================================== -->
+
+            <div class="quiz-navigation">
+
+                <p
+                    class="selection-message"
+                    id="selection-message"
+                >
+                    Select an answer to continue.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="next-btn"
+                    id="next-btn"
+                    disabled
+                >
+                    Next Question
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer class="quiz-footer">
+
+            <div class="footer-text">
+
+                <strong>
+                    CSS Development Assessment
+                </strong>
+
+                <span>
+                    Test your CSS knowledge and practical skills
+                </span>
+
+            </div>
+
+
+            <img
+                src="logo.png"
+                alt="Kaytech IT Logo"
+                class="logo"
+            >
+
+        </footer>
+
+    </main>
 
 
     <script src="main.js"></script>
+
 </body>
+
 </html>
